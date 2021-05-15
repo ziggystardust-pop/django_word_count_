@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/static/bootstrap/css/blog.css" rel="stylesheet">
+<script src="/static/bootstrap/js/bootstrap.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字数统计系统</title>
+    <form action="count">
+        <textarea cols="100" rows = 50 name="text">输入文本</textarea>
+{#多行文本框，设置行列数和默认字符#}
+{#        按钮点击将文本提交给服务器#}
+        <br>
+        <input type="submit" name="统计">
+{#        默认名字就是提交#}
+    </form>
+
+</head>
+    <form action="third">
+        <button>跳转到第3个页面</button>
+        <button>4</button>
+{#        一个form中有多个button，似乎也只会都指向一个action#}
+        <button class="btn btn-success">按钮</button>
+
+    </form>
+{#<button class="btn btn-success">button</button>#}
+<body>
+        <a class="btn btn-info" href="/about">关于本页</a>
+
+</body>
+</html>
+
+

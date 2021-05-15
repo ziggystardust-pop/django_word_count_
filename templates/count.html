@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/static/bootstrap/css/blog.css" rel="stylesheet">
+<script src="/static/bootstrap/js/bootstrap.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+    <a class="btn btn-info" href="..">返回功能页面</a>
+
+    <form>
+        <h1>字数统计结果为：</h1>
+        {{total}}字
+        <br>
+
+        <h2>用户输入的文本为：{{user_text}}</h2>
+        每个文字出现的次数统计：<br>
+{#        {{ word_dic }}#}
+        <h3>从大到小排序：</h3>
+{#        {{ sorted }}#}
+
+    </form>
+
+    {% for word,count in sorted%}
+    {{ word }} : {{ count }}<br>
+    {%endfor%}
+</head>
+<body>
+
+</body>
+</html>
